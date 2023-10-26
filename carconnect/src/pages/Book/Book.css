@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.BookContainerGrid{
+    background-color: #1F2128;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+}
+body{
+    background-color: #ECECED;
+}
+.BookContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 50px;
+}
+
+.circle{
+    background-color: #1F2128;
+    color: #69FFF1;
+    padding: 25px;
+    border-radius: 50%;
+    border: 5px solid #768991;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px ;
+}
+
+.EVIcon{
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.BookingDetailsGrid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.BookingInfo{
+    color: #ECECED;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.BookingInfoOuterGrid{
+    width: 100%;
+}
+
+.BookingDetailsGridItem{
+    padding: 50px;
+}
+
+.priceDiv{
+    background-color: #768991;
+    color: #ECECED;
+    border: 2px dashed #69FFF1;
+    border-radius: 30px 0px 0px 30px;
+    padding: 10px 40px;
+}
+
+.priceDiv h2{
+    margin: 0;
+}
+
+.BookingFormOuterDiv{
+    width: 100%;
+    padding: 0px 50px ;
+    color: #ECECED;
+}
+
+.BookingFormInnerDiv{
+    background-color: #ECECED;
+    border-radius: 5px;
+}
+
+.textField{
+    width: 50% !important;
+}
+
+.duration{
+    color: black;
+    margin-right: 1em;
+}
+
+.duration_button{
+    text-decoration: none !important;
+    text-transform: none !important;
+    color: #1F2128 !important;
+    font-weight: bold !important;
+}
+
+#duration_button_left{   
+    border: 2px #1F2128 solid !important;
+}
+
+#duration_button_center{
+    border-top: 2px #1F2128 solid !important;
+    border-bottom: 2px #1F2128 solid !important;
+}
+
+#duration_button_right{
+    border: 2px #1F2128 solid !important;
+}
+
+.duration_button:hover{
+    background-color: #768991 !important;
+    color: #ECECED !important;
+}
+
+.textFieldContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_bt{
+    border: 3px solid #69FFF1 !important;
+    color: #69FFF1 !important;
+    background-color: #1F2128 !important;
+    text-transform: none !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    font-size: 1.2rem !important;
+    padding: 5px 50px !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    border-radius: 5px !important;
+}
+
+.main_bt:hover{
+    border: 3px solid #1F2128 !important;
+    background-color: #69FFF1 !important;
+    color: #1F2128 !important;
+}
+
+
+.BookingFormPaymentMethod{
+    padding: 0px 50px;
+    width: 100%;
+}
+
+.BookingFormPaymentMethod h2{
+    color: #ECECED;
+}
+
+.paymentOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    background: rgba(118, 137, 145, 0.1);
+    box-shadow: inset 12.5px -12.5px 12.5px rgba(90, 104, 110, 0.1), inset -12.5px 12.5px 12.5px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 5px;
+    color: #ECECED;
+    cursor: pointer;
+}
+
+.BookingFormConfirmReview{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0px 50px;
+    column-gap: 20px;
+}
+
+.BookingFormConfirmReview h3{
+    color: #69FFF1;
+    cursor: pointer;
+}
+
+.MuiSlider-rail { 
+    color: #69FFF1;
+}
+
+.MuiSlider-track { 
+    background-color: #69FFF1 !important;
+}
+
+.MuiSlider-thumb {
+    background-color: #1F2128 !important;
+} 

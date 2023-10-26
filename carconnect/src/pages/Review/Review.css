@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5vh;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.logo {
+    text-align: left;
+    width: 30%;
+}
+
+.title {
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.headers {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.rating-form {
+    width: 800px;
+    height: 550px;
+    background-color: #1F2128;
+    margin-top: -25vh;
+    margin-left: -30vh;
+}
+
+.details {
+    margin-left: 5vh;
+    color: #ECECED;
+    text-align: left;
+    padding: 20px;
+    font-size: 15px;
+    font-family: Source sans pro;
+}
+
+.image {
+    width: max-content;
+    position: relative;
+    left: 800px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    color: #ECECED;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-left: -36vh;
+    font-family: Source sans pro;
+    font-size: 20px;
+}
+
+#star-rate {
+    margin-left: -20vh;
+}
+
+.feedback {
+    color: #ECECED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: -14vh;
+    margin-top: 5vh;
+    font-family: Source sans pro;
+    font-size: 20px;
+}
+
+.input-field {
+    width: 300px;
+    height: 150px;
+}
+
+.submit {
+    width: 150px;
+    padding-top: 3px;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #69FFF1;
+    border-color: #69FFF1;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #1F2128;
+}
+
+.submit:hover {
+    scale: 105%;
+}
+
+.rating-footer {
+    display: flex;
+    flex-direction: row;
+    color: #ECECED;
+    justify-content: space-evenly;
+    font-size: 12px;
+    margin-top: 55px;
+}

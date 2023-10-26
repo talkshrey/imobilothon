@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+.st_name {
+	font-size: 12px !important;
+	color: white !important;
+	font-family: "Source Sans Pro", sans-serif !important;
+	text-align: center;
+    
+}
+
+.address {
+	font-size: 12px !important;
+	color: white !important;
+	text-overflow: ellipsis !important;
+	text-align: center;
+}
+
+.workinghours {
+	font-size: 12px !important;
+	color: white !important;
+	text-align: center;
+}
+
+.buttons {
+	padding: 10px !important;
+	background-color: #1f2128;
+	color: white;
+	text-align: center !important;
+}
+
+.card_media {
+	height: 150px !important;
+}
+
+.star_rating {
+	padding-top: 6px !important;
+	background-color: #1f2128;
+	color: white;
+	text-align: center !important;
+}
+
+.card_content {
+	padding: 0px !important;
+	background-color: #1f2128;
+	color: white;
+	text-align: center !important;
+	height: 80px !important;
+}
+
+.rate_button {
+	border-radius: 0% !important;
+	width: 25% !important;
+	font-weight: bolder !important;
+
+}
+
+.book_button {
+	margin-left: 10% !important;
+	border-radius: 0% !important;
+}
+
+.book_button{
+    margin-left: 10% !important;
+    border-radius: 0% !important;  
+    text-decoration: none !important;
+    width: 45% !important;
+    border: 1px solid #69FFF1 !important;
+    padding: 8px 0px;
+    color: #69FFF1;
+    font-weight: bolder;
+}
+
+.book_button:hover{
+    background-color: #69FFF1;
+    color: #1F2128;
+}
+
+

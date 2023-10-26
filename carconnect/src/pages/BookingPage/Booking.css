@@ -1,0 +1,26 @@
+.css-46bh2p-MuiCardContent-root {
+    padding: 0px;
+}
+
+.headers {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    margin-left: 65% !important;
+    margin-bottom: -1% !important;
+}
+
+
+.nav_bar {
+    text-align: center;
+    padding: 2% 5% 2% 5%;
+}
+
+.right_arrow{
+    width: 90px !important;
+    height: 40px !important; 
+    margin-top: 40% !important;
+}
+
