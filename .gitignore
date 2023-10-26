@@ -17,3 +17,4 @@ venv.bak/
 .vscode
 .idea
 carconnect/carconnect/google-credentials.json
+*/node_modules
