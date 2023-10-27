@@ -41,7 +41,7 @@ export default function SignInSide() {
 				redirect: 'follow'
 			};
 
-			fetch("https://findmyplug.herokuapp.com/register/", requestOptions)
+			fetch("http://localhost:8000/register/", requestOptions)
 				.then(response => response)
 				.then(result => console.log(result))
 				.catch(error => console.log('fgsla', error));

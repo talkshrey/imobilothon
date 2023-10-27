@@ -15,24 +15,13 @@ export default function LoginSide() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
-	var myHeaders = new Headers();
-	myHeaders.append(
-		"Authorization",
-		"Basic Z3JlaGFzaGFoNkBnbWFpbC5jb206Z3JlaGFzaGFo"
-	);
-	myHeaders.append(
-		"Cookie",
-		"csrftoken=fQ5GcS3afHVVVyREFENw1Ub54RZgwlMkIFicrHrxOrddyB7xgNi46AaN5B6A4090; sessionid=vkfter6wndyr2xly3808yhu1meqwl3gn"
-	);
-
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		var formdata = new FormData();
+		let formdata = new FormData();
 		formdata.append("email", email);
 		formdata.append("password", password);
-		fetch("https://findmyplug.herokuapp.com/login/", {
+		fetch("http://localhost:8000/login/", {
 			method: "POST",
-			headers: myHeaders,
 			body: formdata,
 			redirect: "follow",
 		})
@@ -45,8 +34,6 @@ export default function LoginSide() {
 					navigate('/signup')
 					alert('Invalid cred')
 				}
-				// result.token ? navigate("/booking"):
-				// alert("invalid"), navigate("/signup")
 				localStorage.setItem('token', result.token)
 				
 			})

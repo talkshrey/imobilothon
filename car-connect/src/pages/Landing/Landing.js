@@ -38,7 +38,7 @@ function Landing() {
   };
 
   useEffect(() => {
-    fetch("https://findmyplug.herokuapp.com/station", requestOptions)
+    fetch("http://localhost:8000/station", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);

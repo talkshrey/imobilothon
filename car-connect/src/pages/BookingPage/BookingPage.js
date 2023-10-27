@@ -22,7 +22,7 @@ export default function Booking() {
       redirect: "follow",
     };
 
-    fetch("https://findmyplug.herokuapp.com/station/", requestOptions)
+    fetch("http://localhost:8000/station/", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         setData(result);

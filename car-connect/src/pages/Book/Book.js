@@ -108,7 +108,7 @@ function Book() {
 
   useEffect(() => {
     fetch(
-      `https://findmyplug.herokuapp.com/slot/?station=${num}`,
+      `http://localhost:8000/slot/?station=${num}`,
       requestOptions
     )
       .then((response) => response.json())
@@ -143,7 +143,7 @@ function Book() {
       redirect: "follow",
     };
 
-    await fetch("https://findmyplug.herokuapp.com/slot/", requestOptions2)
+    await fetch("http://localhost:8000/slot/", requestOptions2)
       .then((response) => response.json())
       .then((result) => {
         console.log(result.slots.slice(2, -2).split("', '"));
