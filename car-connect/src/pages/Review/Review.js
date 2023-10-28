@@ -2,6 +2,7 @@ import './Review.css'
 import { Link } from 'react-router-dom'
 import { Rating } from '@mui/material'
 import logo from '../../assets/images/LPlogo.png'
+import SimpleBottomNavigation from '../../components/BottomNav/BottomNav'
 
 export default function Review() {
 
@@ -41,6 +42,8 @@ export default function Review() {
                 </div>
                 </form> 
             </center>
+
+            <SimpleBottomNavigation />
         </div>
     )
 }

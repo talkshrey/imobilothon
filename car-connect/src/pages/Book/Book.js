@@ -16,6 +16,7 @@ import Paper from "@mui/material/Paper";
 import Popper from "@mui/material/Popper";
 import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
+import SimpleBottomNavigation from "../../components/BottomNav/BottomNav";
 
 function Book() {
   const location = useLocation();
@@ -107,10 +108,7 @@ function Book() {
   };
 
   useEffect(() => {
-    fetch(
-      `http://localhost:8000/slot/?station=${num}`,
-      requestOptions
-    )
+    fetch(`http://localhost:8000/slot/?station=${num}`, requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
@@ -356,7 +354,13 @@ function Book() {
               {timings
                 ? timings.map((time, index) => {
                     return (
-                      <Grid key={index} item md={3} sm={12} style={{ textAlign: "center" }}>
+                      <Grid
+                        key={index}
+                        item
+                        md={3}
+                        sm={12}
+                        style={{ textAlign: "center" }}
+                      >
                         <Button className="main_bt">{time}</Button>
                       </Grid>
                     );
@@ -372,6 +376,8 @@ function Book() {
           </Grid>
         </Grid>
       </div>
+
+      <SimpleBottomNavigation />
     </>
   );
 }

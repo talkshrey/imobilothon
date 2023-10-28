@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import landingScreenImg from "../../assets/images/landing.png";
 import "./Landing.css";
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
+import SimpleBottomNavigation from "../../components/BottomNav/BottomNav";
+import SimpleTopNavigation from "../../components/TopNav/TopNav";
 
 function Landing() {
   const [station, setStation] = useState([
@@ -50,15 +51,7 @@ function Landing() {
 
   return (
     <div className="landingContainer">
-      <div className="landingImg">
-        <div className="overlay">
-          <img
-            src={landingScreenImg}
-            className="landingScreenImg"
-            alt="cover"
-          />
-        </div>
-      </div>
+      <SimpleTopNavigation />
       <div className="SearchBar">
         <form className="searchForm">
           <Paper
@@ -92,7 +85,7 @@ function Landing() {
             </IconButton>
           </Paper>
           {search.map((item, index) => (
-            <div key={index} style={{margin:"0 3px"}} className="paper">
+            <div key={index} style={{ margin: "0 3px" }} className="paper">
               <Link
                 to={`/booking/${item.id}`}
                 state={{
@@ -108,6 +101,7 @@ function Landing() {
           ))}
         </form>
       </div>
+      <SimpleBottomNavigation />
     </div>
   );
 }

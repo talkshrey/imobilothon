@@ -5,6 +5,7 @@ import CardInfo from "./CardInfo";
 import logo from "../../assets/images/LPlogo.png";
 import { useEffect, useState } from "react";
 import image from "../../assets/images/image.png";
+import SimpleBottomNavigation from "../../components/BottomNav/BottomNav";
 
 export default function Booking() {
   const [data, setData] = useState([]);
@@ -56,6 +57,8 @@ export default function Booking() {
           ))}
         </Grid>
       </center>
+
+      <SimpleBottomNavigation />
     </Box>
   );
 }
