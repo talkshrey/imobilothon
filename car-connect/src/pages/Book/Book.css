@@ -6,7 +6,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 7px;
+    border-radius: 1rem;
+    margin-inline: 5rem;
 }
 body{
     background-color: #ECECED;
@@ -15,25 +16,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
-    padding: 50px;
+    padding: 5rem;
 }
 
 .circle{
     background-color: #1F2128;
     color: #69FFF1;
-    padding: 25px;
+    padding: 1rem;
     border-radius: 50%;
-    border: 5px solid #768991;
+    border: 0.2rem solid #768991;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: -50px ;
+    align-items: center; 
+    margin-top: -2rem;
 }
 
 .EVIcon{
-    width: 50px !important;
-    height: 50px !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
 }
 
 .BookingDetailsGrid{
@@ -54,7 +54,7 @@ body{
 }
 
 .BookingDetailsGridItem{
-    padding: 50px;
+    padding: 1.5rem;
 }
 
 .priceDiv{
@@ -71,7 +71,7 @@ body{
 
 .BookingFormOuterDiv{
     width: 100%;
-    padding: 0px 50px ;
+    padding: 0 5rem;
     color: #ECECED;
 }
 

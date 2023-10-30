@@ -1,34 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./Landing.css";
-import Paper from "@mui/material/Paper";
-import InputBase from "@mui/material/InputBase";
-import IconButton from "@mui/material/IconButton";
-import SearchIcon from "@mui/icons-material/Search";
-import { Link } from "react-router-dom";
 import SimpleBottomNavigation from "../../components/BottomNav/BottomNav";
-import SimpleTopNavigation from "../../components/TopNav/TopNav";
+import PrimarySearchAppBar from "../../components/TopNav/TopNav";
+import { Grid, IconButton, Paper, Typography } from "@mui/material";
+import ColorToggleButton from "./Mode";
+import carimg from "../../assets/images/car.png";
+import MediaControlCard from "./Card";
+import GearToggleButton from "./Gear";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
+import BluetoothIcon from "@mui/icons-material/Bluetooth";
+import BoltIcon from "@mui/icons-material/Bolt";
+import LightModeIcon from "@mui/icons-material/LightMode";
 
 function Landing() {
-  const [station, setStation] = useState([
-    {
-      id: "",
-      station_name: "",
-      address: "",
-      number: "",
-    },
-  ]);
-
-  const [search, setSearch] = useState([
-    {
-      id: "",
-      station_name: "",
-      address: "",
-      number: "",
-    },
-  ]);
-
-  const [input, setInput] = useState("");
-
   var myHeaders = new Headers();
   myHeaders.append("Authorization", `Token ${localStorage.getItem("token")}`);
 
@@ -43,66 +27,97 @@ function Landing() {
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
-        setStation(result);
       })
       .catch((error) => console.log("error", error));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="landingContainer">
-      <SimpleTopNavigation />
-      <div className="SearchBar">
-        <form className="searchForm">
-          <Paper
-            sx={{
-              p: "2px 4px",
-              display: "flex",
-              alignItems: "center",
-              width: 400,
-            }}
-          >
-            <InputBase
-              sx={{ ml: 1, flex: 1 }}
-              placeholder="Locate nearby charging stations.."
-              inputProps={{ "aria-label": "Locate nearby charging stations.." }}
-              onChange={(event) => {
-                console.log(event.target.value);
-                setInput(event.target.value);
-                setSearch(
-                  station.filter((station) =>
-                    station.station_name
-                      .toLowerCase()
-                      .startsWith(event.target.value)
-                  )
-                );
-              }}
-              value={input}
-            />
-
-            <IconButton type="submit" sx={{ p: "10px" }} aria-label="search">
-              <SearchIcon />
-            </IconButton>
-          </Paper>
-          {search.map((item, index) => (
-            <div key={index} style={{ margin: "0 3px" }} className="paper">
-              <Link
-                to={`/booking/${item.id}`}
-                state={{
-                  name: item.station_name,
-                  address: item.location,
-                  number: item.phone_no,
+    <>
+      <PrimarySearchAppBar />
+      <div className="landingContainer">
+        <Grid container>
+          <Grid item xs={6}>
+            <Grid container>
+              <Grid
+                item
+                xs={6}
+                sx={{
+                  paddingBlock: 4,
+                  textAlign: "center",
                 }}
-                className="link"
               >
-                {item.station_name}
-              </Link>
-            </div>
-          ))}
-        </form>
+                <ColorToggleButton />
+              </Grid>
+              <Grid item xs={6} sx={{ paddingBlock: 4, textAlign: "center" }}>
+                <GearToggleButton />
+              </Grid>
+              <Grid item xs={6}>
+                <img src={carimg} alt="carimg" />
+              </Grid>
+              <Grid item xs={6}>
+                <MediaControlCard />
+                <MediaControlCard />
+              </Grid>
+              <Grid
+                container
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  paddingBlock: 1,
+                }}
+                spacing={2}
+              >
+                <Grid sx={{ textAlign: "center" }} item xs={2}>
+                  <Paper elevation={2}>
+                    <IconButton>
+                      <BluetoothIcon fontSize="large" />
+                    </IconButton>
+                    <Typography> Bluetooth </Typography>
+                  </Paper>
+                </Grid>
+                <Grid sx={{ textAlign: "center" }} item xs={2}>
+                  <Paper elevation={2}>
+                    <IconButton>
+                      <AcUnitIcon fontSize="large" />
+                    </IconButton>
+                    <Typography> Conditioner </Typography>
+                  </Paper>
+                </Grid>
+                <Grid sx={{ textAlign: "center" }} item xs={2}>
+                  <Paper elevation={2}>
+                    <IconButton>
+                      <BoltIcon fontSize="large" />
+                    </IconButton>
+                    <Typography> Charge </Typography>
+                  </Paper>
+                </Grid>
+                <Grid sx={{ textAlign: "center" }} item xs={2}>
+                  <Paper elevation={2}>
+                    <IconButton>
+                      <LightModeIcon fontSize="large" />
+                    </IconButton>
+                    <Typography> Car Lights </Typography>
+                  </Paper>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={6}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30143.81258780415!2d72.8292709322786!3d19.196225527242774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sev%20station%20near%20me!5e0!3m2!1sen!2sin!4v1698647831891!5m2!1sen!2sin"
+              height="100%"
+              width="99%"
+              allowfullscreen="true"
+              title="map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            />
+          </Grid>
+        </Grid>
+        <SimpleBottomNavigation />
       </div>
-      <SimpleBottomNavigation />
-    </div>
+    </>
   );
 }
 

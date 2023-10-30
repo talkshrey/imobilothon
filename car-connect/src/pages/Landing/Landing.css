@@ -13,14 +13,6 @@
   z-index: -1;
 }
 
-.SearchBar{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.411);
-}
-
 .paper{
     background-color: white;
     padding-inline-start: 10px;

@@ -10,8 +10,8 @@ import { Typography } from "@mui/material";
 export default function PrimarySearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" color="transparent" sx={{ height: 50 }}>
-        <Toolbar>
+      <AppBar position="sticky" color="transparent" sx={{ height: 50 }}>
+        <Toolbar sx={{ height: 20, mt: 0, pt: 0 }}>
           <IconButton
             size="small"
             edge="start"

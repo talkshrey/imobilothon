@@ -4,7 +4,6 @@ import "./Book.css";
 import EvStationIcon from "@mui/icons-material/EvStation";
 import { useLocation } from "react-router-dom";
 import TextField from "@mui/material/TextField";
-import logo from "../../assets/images/LPlogo.png";
 import { Button } from "@mui/material";
 import { Slider } from "@material-ui/core";
 import ButtonGroup from "@mui/material/ButtonGroup";
@@ -17,6 +16,7 @@ import Popper from "@mui/material/Popper";
 import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import SimpleBottomNavigation from "../../components/BottomNav/BottomNav";
+import PrimarySearchAppBar from "../../components/TopNav/TopNav";
 
 function Book() {
   const location = useLocation();
@@ -152,16 +152,7 @@ function Book() {
 
   return (
     <>
-      <img
-        src={logo}
-        alt="cover-img"
-        style={{
-          marginTop: "25px",
-          display: "flex",
-          justifyContent: "flex-start",
-          marginLeft: "50px",
-        }}
-      />
+      <PrimarySearchAppBar />
       <div className="BookContent">
         <Grid container className="BookContainerGrid">
           <div className="circle">
