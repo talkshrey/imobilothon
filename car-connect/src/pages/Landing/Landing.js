@@ -12,6 +12,8 @@ import BluetoothIcon from "@mui/icons-material/Bluetooth";
 import BoltIcon from "@mui/icons-material/Bolt";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import SpeedCard from "./Speed";
+import speedimg from "../../assets/images/speed.png";
+import detailimg from "../../assets/images/details.png";
 
 function Landing() {
   var myHeaders = new Headers();
@@ -57,8 +59,8 @@ function Landing() {
                 <img src={carimg} alt="carimg" />
               </Grid>
               <Grid item xs={6}>
-                <SpeedCard />
-                <SpeedCard />
+                <SpeedCard source={detailimg} />
+                <SpeedCard source={speedimg} />
                 <MediaControlCard />
               </Grid>
               <Grid

@@ -28,11 +28,10 @@
 }
 
 .rating-form {
-    width: 800px;
-    height: 550px;
+    width: 55rem;
+    height: 35rem;
     background-color: #1F2128;
     margin-top: -25vh;
-    margin-left: -30vh;
 }
 
 .details {
@@ -45,9 +44,10 @@
 }
 
 .image {
-    width: max-content;
+    height: max-content;
     position: relative;
-    left: 10rem;
+    left: 40rem;
+    top: 2rem;
 }
 
 .stars {
