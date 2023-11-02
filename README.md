@@ -151,8 +151,6 @@ The React Native project should now start building and running on your device or
 
 ## Contributors
 
-We would like to acknowledge the exceptional teamwork and collaboration among all the contributors involved in this project. The successful outcome of our endeavor is a testament to the collective effort and dedication of each team member.
-
 - [Priyambi Hiran (App | Design) ](https://github.com/priyambi)
 - [Shrey Parekh (Frontend | Backend) ](https://github.com/talkshrey)
 
