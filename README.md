@@ -36,8 +36,7 @@ CarConnect is not just another software solution; it's a revolutionary ecosystem
 - [Demonstration \& Screenshots](#demonstration--screenshots)
   - [Link to video demonstration](#link-to-video-demonstration)
   - [Screenshots of Mobile App](#screenshots-of-mobile-app)
-  - [Screenshots of Car Application](#screenshots-of-web-application)
-- [API Documentation](#api-documentation)
+  - [Screenshots of Car Application](#screenshots-of-car-screen)
 - [Installation](#installation)
   - [To run our React Project Locally](#to-run-our-react-project-locally)
   - [To run our React Native Project Locally](#to-run-our-react-native-project-locally)
@@ -79,7 +78,7 @@ The key features of CarConnect ecosystem are:-
 - Statistical Insights<br>
     - Generate insightful statistics and analytics for informed decision-making and trend analysis.
 - Blogs<br>
-    - To know about the latest trends in the field of connected cars.
+    - To know about the latest trends in the field of connected electric cars.
 
 ## Demonstration & Screenshots
 
@@ -90,8 +89,9 @@ The key features of CarConnect ecosystem are:-
 
 
 ### Screenshots of Car Screen
-
-
+![image](https://github.com/talkshrey/imobilothon/assets/74039736/b89815b8-4242-4e9f-8af9-387f9c1f7909)
+![image](https://github.com/talkshrey/imobilothon/assets/74039736/5d0928a5-cabd-415b-89af-8fbec67f8968)
+![image](https://github.com/talkshrey/imobilothon/assets/74039736/36872b01-3056-41af-ae7f-def3ec593b22)
 
 ## Installation
 
