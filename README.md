@@ -3,7 +3,7 @@
   
   <div>
   <h1 fontSize="500">CarConnect </h1>
-    <img height="150" src="https://github.com/talkshrey/imobilothon/assets/79246912/df871ffe-7c16-4a36-92a7-cdb4274199bc"  /><br>
+  <img height="150" src="https://github.com/talkshrey/imobilothon/assets/79246912/df871ffe-7c16-4a36-92a7-cdb4274199bc" /><br>
   </div>
 </div>
 <p align="center">
@@ -50,20 +50,22 @@ CarConnect is not just another software solution; it's a revolutionary ecosystem
 ## Technologies Used
 
 CarConnect is a versatile application that supports multiple devices and utilizes a diverse range of technology stacks.
-- React
+- React (Website to demonstrate car screen)
 - Django
 - React Native
-- MongoDB
+- SQLite
 - Figma
+
 
 The choice of these technologies is based on factors such as their scalability, cross-platform compatibility, community support, availability of libraries and frameworks, and familiarity of the development team.
 
+*Note: React is used to for demonstration purposes. There will be a separate firmware created for car screen (Car Screen OS)*
 
 ## Features
 
-The key features of eZ-RUPI Application are:-
-- 3 interfaces : Web, Mobile and Car Screen <br>
-    - Intuitive interfaces catering to different gadgets and enabling seamless interactions.
+The key features of CarConnect ecosystem are:-
+- 3 interfaces : Admin Panel, Mobile and Car Screen <br>
+  - Intuitive interfaces catering to different gadgets and enabling seamless interactions.
 - Auto-slot booking<br>
     - Secure your charging slot automatically when battery drains below a desired level.
 - Manual slot booking <br>
@@ -71,7 +73,7 @@ The key features of eZ-RUPI Application are:-
 - Smart Routing <br>
     - Choose the best possible path to reach charging station at the earliest.
 - Smart Grid<br>
-    - shrey bhar.
+    - Connects vehicles, charging stations and users to manage efficient routing, traffic allocation, slot booking etc.
 - QR Scanning<br>
     - Scan QR codes to make easy in-app payments.
 - Statistical Insights<br>
@@ -87,15 +89,26 @@ The key features of eZ-RUPI Application are:-
 ### Screenshots of Mobile App
 
 
-### Screenshots of Web Application
+### Screenshots of Car Screen
 
 
-
-## API Documentation
-
-Link to API Documentation : 
 
 ## Installation
+
+### To run our Backend (Django) Project Locally 
+
+Run the backend application before running any frontend application. All migrations have been applied and database has been populated. Follow these steps to run a Django project on your local machine:
+
+1. Clone the project repository: 
+```bash
+git clone https://github.com/talkshrey/imobilothon
+```
+2. Navigate to the branch: `backend`
+3. Create a virtual environment and pip install the requirements.txt file
+4. Navigate to the project directory: `cd carconnect`
+5. Simply run the server: `python manage.py runserver`
+6. You can login to the admin panel using these credentials: (Username - admin@gmail.com, Password - admin)
+7. You can also view the API documentation in the `/swagger` route
 
 ### To run our React Project Locally 
 
@@ -105,13 +118,13 @@ Follow these steps to run a React project on your local machine:
 ```bash
 git clone https://github.com/talkshrey/imobilothon
 ```
-2. Navigate to the desired branch :
-   - For Frontend: `frontend`
-   - For Backend: `backend`
-2. Navigate to the project directory: `cd project`
+2. Navigate to the branch: `frontend`
+2. Navigate to the project directory: `cd car-connect`
 3. Install project dependencies: `npm install`
 4. Start the development server: `npm start`
-5. Open your web browser and visit: `http://localhost:3000`
+5. Open your web browser and visit: `http://localhost:3000/login`
+6. Login with the following credentials: (Username - user1@gmail.com, Password - testpass@123)
+7. Once logged in you can go to the home page (main car screen)
 
 You should now see the React project running in your browser. 
 
@@ -123,8 +136,8 @@ Follow these steps to run a React Native project on your local machine:
 ```bash
 git clone https://github.com/talkshrey/imobilothon
 ```
-2. Navigate to the branch:  `App`
-2. Navigate to the project directory: `cd project`
+2. Navigate to the branch:  `app`
+2. Navigate to the project directory: `cd Car-Connect-App`
 3. Install project dependencies: `npm install`
 4. Make sure you have set up the development environment by installing Node.js and React Native CLI.
 5. Connect your Android or iOS device to your computer, or set up an emulator/simulator.
