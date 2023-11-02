@@ -71,7 +71,7 @@ The key features of eZ-RUPI Application are:-
 - Smart Routing <br>
     - Choose the best possible path to reach charging station at the earliest.
 - Smart Grid<br>
-    - Ability to carry out various utility transactions like paying Electricity Bills within the application.
+    - shrey bhar.
 - QR Scanning<br>
     - Scan QR codes to make easy in-app payments.
 - Statistical Insights<br>
