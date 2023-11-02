@@ -2,12 +2,12 @@
 <div align="center">
   
   <div>
-  <h1 fontSize="500">CarConnect : Seamless Connectivity for Smart Cars with CarConnect </h1>
+  <h1 fontSize="500">CarConnect </h1>
     <img height="150" src="https://github.com/talkshrey/imobilothon/assets/79246912/df871ffe-7c16-4a36-92a7-cdb4274199bc"  /><br>
   </div>
 </div>
 <p align="center">
-✨Empowering Seamless Transactions, the eZ-RUPI Way!✨
+✨Seamless Connectivity for Smart Cars with CarConnect✨
 </p>
 
 
