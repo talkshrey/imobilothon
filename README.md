@@ -37,10 +37,11 @@ CarConnect is not just another software solution; it's a revolutionary ecosystem
   - [Link to video demonstration](#link-to-video-demonstration)
   - [Screenshots of Mobile App](#screenshots-of-mobile-app)
   - [Screenshots of Car Application](#screenshots-of-car-screen)
+  - [Screenshots of Admin Panel](#screenshots-of-admin-panel)
 - [Installation](#installation)
   - [To run our React Project Locally](#to-run-our-react-project-locally)
   - [To run our React Native Project Locally](#to-run-our-react-native-project-locally)
-  - [To run our Node.JS Project Locally](#to-run-our-nodejs-project-locally)
+  - [To run our Django Project Locally](#to-run-our-backend-(django)-project-locally)
 - [Contributors](#contributors)
 - [Acknowledgements](#acknowledgements)
 
@@ -83,7 +84,7 @@ The key features of CarConnect ecosystem are:-
 ## Demonstration & Screenshots
 
 ### Link to video demonstration 
-
+[CarConnect](https://youtu.be/BtFEAdQDizE)
 
 ### Screenshots of Mobile App
 ![screen1](https://github.com/talkshrey/imobilothon/assets/74039736/dda57039-dcd7-44cc-b46e-c403f04b1949) 
