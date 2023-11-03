@@ -41,7 +41,7 @@ CarConnect is not just another software solution; it's a revolutionary ecosystem
 - [Installation](#installation)
   - [To run our React Project Locally](#to-run-our-react-project-locally)
   - [To run our React Native Project Locally](#to-run-our-react-native-project-locally)
-  - [To run our Django Project Locally](#to-run-our-backend-django-project-locally)
+  - [To run our Django Project Locally](#to-run-our-backend-project-locally)
 - [Contributors](#contributors)
 - [Acknowledgements](#acknowledgements)
 
@@ -111,7 +111,7 @@ The key features of CarConnect ecosystem are:-
 
 ## Installation
 
-### To run our Backend (Django) Project Locally 
+### To run our Backend Project Locally 
 
 Run the backend application before running any frontend application. All migrations have been applied and database has been populated. Follow these steps to run a Django project on your local machine:
 
