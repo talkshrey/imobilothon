@@ -29,7 +29,7 @@ CarConnect is not just another software solution; it's a revolutionary ecosystem
 ## Table of Contents
 
 - [Project Description](#project-description)
-- [Contents of CarConnect Product Suite](#contents-of-ez-upi-product-suite)
+- [Contents of CarConnect Product Suite](#contents-of-carconnect-product-suite)
 - [Table of Contents](#table-of-contents)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
