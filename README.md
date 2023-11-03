@@ -41,7 +41,7 @@ CarConnect is not just another software solution; it's a revolutionary ecosystem
 - [Installation](#installation)
   - [To run our React Project Locally](#to-run-our-react-project-locally)
   - [To run our React Native Project Locally](#to-run-our-react-native-project-locally)
-  - [To run our Django Project Locally](#to-run-our-backend-(django)-project-locally)
+  - [To run our Django Project Locally](#to-run-our-backend-django-project-locally)
 - [Contributors](#contributors)
 - [Acknowledgements](#acknowledgements)
 
